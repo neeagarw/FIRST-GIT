@@ -1,0 +1,98 @@
+a:hover, a:focus {
+	text-decoration: underline !important;
+}
+
+.change-container {
+	background: #f0f0f0;
+	border: 1px solid #ddd;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	display: block;
+	font-family: monospace;
+	line-height: 1;
+	max-width: 700px;
+	overflow: hidden;
+	padding: 2px 4px;
+	text-overflow: ellipsis;
+	vertical-align: top;
+	color: #505050;
+	white-space: normal;
+}
+
+.change-container * {
+	float: left;
+	display: block;
+	max-width: 100%;
+	word-wrap: break-word;
+	line-break: break-all;
+}
+
+@media handheld , only screen and (max-device-width: 480px) {
+	.change-container {
+		background: #f0f0f0;
+		border: 1px solid #ddd;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		display: block;
+		font-family: monospace;
+		line-height: 1;
+		max-width: 360px;
+		overflow: hidden;
+		padding: 2px 4px;
+		text-overflow: ellipsis;
+		vertical-align: top;
+		color: #505050;
+		white-space: normal;
+	}
+	.change-container * {
+		float: left;
+		display: block;
+		max-width: 100%;
+		word-wrap: break-word;
+		line-break: break-all;
+	}
+	div, a, p, td, th, li, dt, dd {
+		-webkit-text-size-adjust: auto;
+	}
+	small, small a {
+		-webkit-text-size-adjust: 90%;
+	}
+	small[class=email-metadata] {
+		-webkit-text-size-adjust: 93%;
+		font-size: 12px;
+	}
+	table[id=email-wrap]>tbody>tr>td {
+		padding: 2px !important;
+	}
+	table[id=email-wrap-inner]>tbody>tr>td {
+		padding: 8px !important;
+	}
+	table[id=email-footer] td {
+		padding: 8px 12px !important;
+	}
+	table[id=email-actions] td {
+		padding-top: 0 !important;
+	}
+	table[id=email-actions] td.right {
+		text-align: right !important;
+	}
+	table[id=email-actions] .email-list-item {
+		display: block;
+		margin: 1em 0 !important;
+		word-wrap: normal !important;
+	}
+	span[class=email-list-divider] {
+		display: none;
+	}
+	.commentsummary small[class=email-metadata] {
+		display: block;
+	}
+	td.comment-avatar {
+		padding: 8px 8px 0 8px !important;
+	}
+	.comment>td+td {
+		padding: 8px 8px 8px 0 !important;
+	}
+}
